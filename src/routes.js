@@ -16,14 +16,14 @@ class NoteRoutes{
     static initIndex(server) {
         server.route({
             method: 'GET',
-            path: this.getPath('/'),
+            path: this.getPath(''),
             handler: (req, h) => {
                 return h.response({
                     status: "success",
                     data: {
                         notes: notes
                     }
-                }).status(200);
+                }).code(200);
             }
         })
     }
