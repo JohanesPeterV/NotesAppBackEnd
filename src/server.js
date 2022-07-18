@@ -9,7 +9,7 @@ const init = async () => {
 }
 
 init().then(()=>{
-    console.log('Server initialized')
+    console.log('Server initialized'+serverOptions.host+'/'+serverOptions.port)
 });
 
 
